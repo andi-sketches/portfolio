@@ -205,7 +205,7 @@ nav a {
   }
 
 .head {
-  margin-top: 4rem;
+  margin-top: 2.5rem;
 }
 
 .sub-head {
@@ -218,7 +218,7 @@ nav a {
 
 .oval-andrea {
   position: absolute;
-  top: 4.3rem;
+  top: 2.4rem;
   left: -1rem;
   z-index: -1;
 }
@@ -315,6 +315,8 @@ nav a {
 
 /* Case study styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/*Burger King*/
 .header-case {
   position: relative;
   text-align: center;
@@ -334,10 +336,10 @@ nav a {
   margin-top: 40px;
   margin-bottom: 48px;
 }
-
+/* 
 .body-case > h2 {
   margin-bottom: 0rem;
-}
+} */
 
 .my-role {
   display: grid;
@@ -389,14 +391,26 @@ nav a {
 }
 
 .img-container {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .style-tile-img {
-  margin: 2rem 1.4rem;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.24), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+  margin-top: 2rem;
   max-width: 80%;
+}
+
+.less-space-p {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.end-space {
+  margin-bottom: 3rem;
+}
+
+
+.shadow {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.24), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
 }
 
 .video-div {
@@ -408,6 +422,7 @@ nav a {
   display: inline-block;
 }
 
+/*Foca*/
 .foca-board {
   max-width: 100%;
 }
@@ -423,6 +438,24 @@ nav a {
 }
 
 
+/*Giro*/
+.giro-image {
+  max-width: 100%;
+}
+
+.giro-logo-sketch {
+  max-width: 100%;
+  margin: 0 auto;
+  height: auto;
+}
+
+.giro-logo-h2 {
+  margin-top: 2rem;
+}
+
+
+
+
 
 .appendix {
   margin-top: 4rem;
@@ -432,6 +465,16 @@ nav a {
 @media (min-width: 600px) {
   .my-role {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .giro-personas {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .giro-logo-sketch {
+    max-width: 70%;
   }
 }
 
@@ -475,10 +518,6 @@ nav a {
     grid-gap: 2rem;
     grid-template-columns: 1fr 1fr;
   }
-  /* .me {
-    max-width: 50%;
-    float: left;
-  } */
 }
 
 
@@ -492,6 +531,7 @@ footer {
 
 footer > h3 {
   padding-top: 4rem;
+  padding-bottom: 2rem;
 }
 
 .oval-footer {
