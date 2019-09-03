@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-/* * {
-  border: 1px solid blue;
-} */
-
 /* Grid /layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 nav,
@@ -250,6 +246,7 @@ nav a {
 .card:hover {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 3px 6px 0 rgba(0, 0, 0, 0.15);
   cursor: pointer;
+  color: white;
 }
 
 .hover {
@@ -336,7 +333,7 @@ nav a {
   margin-top: 40px;
   margin-bottom: 48px;
 }
-/* 
+/*
 .body-case > h2 {
   margin-bottom: 0rem;
 } */
@@ -345,7 +342,7 @@ nav a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1rem;
 }
 
 .my-role > li {
@@ -453,9 +450,9 @@ nav a {
   margin-top: 2rem;
 }
 
-
-
-
+.next-project-div {
+  text-align: right;
+}
 
 .appendix {
   margin-top: 4rem;
@@ -541,27 +538,20 @@ footer > h3 {
   left: 50%;
   margin-left: -60px;}
 
-.feather {
-  /* stroke: #323E3B; */
-}
+  .footer-icon {
+    stroke: #323E3B;
+    font-size: 1.6rem;
+    padding: 0.4rem;
+  }
 
-svg {
-  stroke: pink;
-}
+  .footer-icons-div > a {
+    text-decoration: none;
+  }
 
-footer > svg:hover {
-  stroke: #1BA187;
-  cursor: pointer;
-  transition: .5s ease;
 
-}
 
 @media (min-width: 600px) {
-  svg {
-    width: 32px;
-    height: 32px;
-    margin-left: 1rem;
-  }
+
 }
 
 /* Misc
