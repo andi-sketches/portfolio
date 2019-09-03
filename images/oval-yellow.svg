@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="62px" viewBox="0 0 128 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Oval Copy 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="23.8911999%" y1="38.0835762%" x2="92.4143634%" y2="58.2348017%" id="linearGradient-1">
+            <stop stop-color="#FBEFA7" offset="0%"></stop>
+            <stop stop-color="#FEFCEB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-DESKTOP" transform="translate(-435.000000, -194.000000)" fill="url(#linearGradient-1)">
+            <g id="HELLO" transform="translate(233.000000, 194.000000)">
+                <path d="M284.089157,62 C323.29074,62 335.219369,61.1381447 327.310272,40.5281157 C319.401175,19.9180868 312.820986,0 273.619403,0 C234.41782,0 202.619403,16.6089852 202.619403,30.3204848 C202.619403,44.0319844 244.887574,62 284.089157,62 Z" id="Oval-Copy-6"></path>
+            </g>
+        </g>
+    </g>
+</svg>

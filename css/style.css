@@ -1,0 +1,842 @@
+* {
+  box-sizing: border-box;
+}
+
+/* * {
+  border: 1px solid blue;
+} */
+
+/* Grid /layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+nav,
+.container {
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.hello {
+  display: none;
+  position: relative;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1rem;
+}
+
+.intro-text {
+  grid-column: 1 / -1;
+}
+
+
+@media (min-width: 600px) {
+  .intro-text {
+    grid-column: 8 / -1;
+  }
+
+  .hello {
+    display: inline-block;
+    grid-column: 2 / 6;
+  }
+
+  .oval-andrea {
+    display: none;
+  }
+}
+
+.container {
+  padding: 0 1.875rem;
+}
+
+.home {
+  display: grid;
+  grid-gap: 1rem;
+  /*grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));*/
+  grid-template-columns: minmax(260px, 1fr);
+}
+
+@media (min-width: 600px) {
+  .home {
+    grid-template-columns: repeat(2, minmax(235px, 1fr));
+  }
+
+  nav,
+  .container {
+    padding: 0 2rem;
+    }
+
+  .container {
+    max-width: 960px;
+  }
+}
+
+  /* Header styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+nav,
+.nav-links {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  color: #5d746e;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.logo {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.nav-links {
+  /*display: none;*/
+}
+
+.nav-links > a {
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid #BFCAC7;
+  margin-bottom: -2px;
+  padding: .6rem;
+}
+
+.nav-links a:hover {
+  border-bottom-color: #1BA187;
+}
+
+.active {
+  color: #1BA187;
+}
+
+/* .hamburger {
+  justify-self: end;
+  fill: #323E3B;
+} */
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+
+  /* .hamburger {
+    display: none;
+  } */
+
+  nav {
+    flex-direction: row;
+    height: 32px;
+  }
+
+  .logo {
+    margin-right: auto;
+    padding-bottom: none;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+  }
+
+  .nav-links a:hover {
+    border-bottom: 2px solid #1BA187;
+    }
+}
+
+/* Greeting
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.oval {
+  position: absolute;
+}
+
+.pink {
+  top: 3rem;
+}
+
+.yellow {
+  top: 4rem;
+  left: 10rem;
+}
+
+.green {
+  top: 8rem;
+  left: 3.5rem;
+}
+
+.letter {
+  position: absolute;
+}
+
+  .h {
+    top: 6rem;
+    left: 3rem;
+    z-index: 2;
+  }
+
+  .e {
+    top: 5.7rem;
+    left: 6.2rem;
+    z-index: 2;
+  }
+
+  .l-1 {
+    top: 6.8rem;
+    left: 8.4rem;
+    z-index: 2;
+  }
+
+  .l-2 {
+    top: 6.5rem;
+    left: 10.5rem;
+    z-index: 2;
+  }
+
+  .o {
+    top: 6rem;
+    left: 13rem;
+    z-index: 2;
+  }
+
+.head {
+  margin-top: 4rem;
+}
+
+.sub-head {
+  margin-bottom: 4rem;
+}
+
+.intro-text {
+  position: relative;
+}
+
+.oval-andrea {
+  position: absolute;
+  top: 4.3rem;
+  left: -1rem;
+  z-index: -1;
+}
+
+/* Media queries */
+@media (min-width: 600px) {
+
+
+}
+
+
+/* Cards
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.card {
+  border-radius: 7.5px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.24), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+  transition: 0.3s;
+  position: relative;
+  height: 100%;
+  display: block;
+  overflow: auto;
+}
+
+.card > img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.card:hover {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 3px 6px 0 rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.hover {
+  transition: .5s ease;
+}
+
+.card-title,
+.card-desc,
+.card-cta {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.25rem;
+  margin: 0;
+}
+
+.card-title {
+  top: 10%;
+  left: 1.25rem;
+}
+
+.card-desc, .card-cta {
+  color: #fcfdfd;
+  display: none;
+}
+
+.card-desc {
+  top: 30%;
+  padding-right: 20%;
+  line-height: 1;
+}
+
+.card-cta {
+  top: 70%;
+  font-weight: 700;
+}
+
+.card-overlay {
+  border-radius: 7.5px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(220, 117, 86, 0.85);
+  overflow: hidden;
+}
+
+.card:hover .card-overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.card:hover > .hover {
+  display: inline;
+  color: #fcfdfd;
+}
+
+.card:hover > .card-title {
+  color: #fcfdfd;
+}
+
+/* Case study styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.header-case {
+  position: relative;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.oval-case {
+  position: absolute;
+  z-index: -1;
+  margin: 0 auto;
+  top: .1rem;
+  left: 50%;
+  margin-left: -100px;
+}
+
+.body-case {
+  margin-top: 40px;
+  margin-bottom: 48px;
+}
+
+.body-case > h2 {
+  margin-bottom: 0rem;
+}
+
+.my-role {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  margin-bottom: 1.6rem;
+}
+
+.my-role > li {
+  list-style: none;
+  justify-self: start;
+}
+
+.persona-div {
+  display: inline-block;
+}
+
+.persona-div > ul > li {
+  margin-bottom: 0.2rem;
+}
+
+.persona-div > h4 {
+  margin-bottom: 1rem;
+}
+
+.persona-img {
+  width: 150px;
+  float: right;
+  margin: 1em;
+}
+
+.ia-img-div {
+  text-align: center;
+}
+
+.ia-img {
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto 0.2rem auto;
+}
+
+.ia-img-new {
+  max-width: 350px;
+}
+
+.ia-img-div > p {
+  margin-bottom: 3rem;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.style-tile-img {
+  margin: 2rem 1.4rem;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.24), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+  max-width: 80%;
+}
+
+.video-div {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.video {
+  display: inline-block;
+}
+
+.foca-board {
+  max-width: 100%;
+}
+
+.foca-menubar {
+  max-width: 100%;
+}
+
+.foca-screen-img {
+  max-width: 100%;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.24), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+}
+
+
+
+.appendix {
+  margin-top: 4rem;
+  margin-bottom: 0rem;
+}
+
+@media (min-width: 600px) {
+  .my-role {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* About styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.about-container {
+  margin-top: 3rem;
+}
+
+.about-text > p {
+  margin-bottom: 2rem;
+}
+
+.my-photo {
+  max-width: 100%;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.24), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+  margin-bottom: 2rem;
+}
+
+.myButton {
+	background-color:#dd876d;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size: 1.2rem;
+	padding:0.7rem 1.5rem;
+	text-decoration:none;
+}
+.myButton:hover {
+	background-color:#eab5a4;
+  color: #ffffff;
+}
+
+@media (min-width: 600px) {
+  .about-container {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  /* .me {
+    max-width: 50%;
+    float: left;
+  } */
+}
+
+
+
+/* Footer styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+footer {
+  text-align: center;
+  position: relative;
+}
+
+footer > h3 {
+  padding-top: 4rem;
+}
+
+.oval-footer {
+  position: absolute;
+  z-index: -1;
+  top: 3rem;
+  left: 50%;
+  margin-left: -60px;}
+
+.feather {
+  /* stroke: #323E3B; */
+}
+
+svg {
+  stroke: pink;
+}
+
+footer > svg:hover {
+  stroke: #1BA187;
+  cursor: pointer;
+  transition: .5s ease;
+
+}
+
+@media (min-width: 600px) {
+  svg {
+    width: 32px;
+    height: 32px;
+    margin-left: 1rem;
+  }
+}
+
+/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid #E1E1E1; }
+
+
+/* Clearing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Self Clearing Goodness */
+.container:after,
+.row:after,
+.u-cf {
+  content: "";
+  display: table;
+  clear: both; }
+
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
+
+
+
+
+
+  /* Base Styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  /* NOTE: 16pt basis =
+  12pt = 0.75rem
+  14pt = 0.875rem
+  16pt = 1rem
+  18pt = 1.125rem
+  20pt = 1.25rem
+  24pt = 1.5rem
+  30pt = 1.875rem
+  36pt = 2.25rem
+  48pt = 3rem
+  60pt = 3.75rem
+
+  64 = 4rem
+   */
+  html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+  body {
+    font-size: 1em; /* currently ems cause chrome bug misinterpreting rems on body element */
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: "Quattrocento Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #323E3B;
+    background-color: #FCFDFD;
+  }
+
+
+  /* Typography
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    font-weight: 400; }
+  h1 { font-size: 1.875rem; line-height: 1.2;  letter-spacing: -.1rem; font-weight: 700; color: #323e3b; margin-bottom: 2rem;
+}
+  h2 { font-size: 1.25rem; line-height: 1.25; letter-spacing: -.1rem; color: #5d746e; color: #323e3b;}
+  h3 { font-size: 1.5rem; line-height: 1.3;  letter-spacing: -.1rem; font-weight: 700; }
+  h4 { font-size: 1rem; line-height: 1.35; font-weight: 700;}
+  h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
+  h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
+
+
+  /* Larger than phablet
+  @media (min-width: 650px) {
+    h1 { font-size: 2.25rem; }
+    h2 { font-size: 1.25rem; }
+    h3 { font-size: 2rem; }
+    h4 { font-size: 3.0rem; }
+    h5 { font-size: 2.4rem; }
+    h6 { font-size: 1.5rem; }*/
+  }
+
+  p {
+    margin-top: 0; }
+
+  .logo {
+    font-family: "Bad Script", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.25rem;
+  }
+
+  /* Links
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  a {
+    color: #323E3B;
+  }
+  a:hover {
+    color: #1BA187;
+    transition: color 0.2.5s ease-out;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+
+  /* Buttons
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .button,
+  button,
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"] {
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    color: #555;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    box-sizing: border-box; }
+  .button:hover,
+  button:hover,
+  input[type="submit"]:hover,
+  input[type="reset"]:hover,
+  input[type="button"]:hover,
+  .button:focus,
+  button:focus,
+  input[type="submit"]:focus,
+  input[type="reset"]:focus,
+  input[type="button"]:focus {
+    color: #333;
+    border-color: #888;
+    outline: 0; }
+  .button.button-primary,
+  button.button-primary,
+  input[type="submit"].button-primary,
+  input[type="reset"].button-primary,
+  input[type="button"].button-primary {
+    color: #FFF;
+    background-color: #33C3F0;
+    border-color: #33C3F0; }
+  .button.button-primary:hover,
+  button.button-primary:hover,
+  input[type="submit"].button-primary:hover,
+  input[type="reset"].button-primary:hover,
+  input[type="button"].button-primary:hover,
+  .button.button-primary:focus,
+  button.button-primary:focus,
+  input[type="submit"].button-primary:focus,
+  input[type="reset"].button-primary:focus,
+  input[type="button"].button-primary:focus {
+    color: #FFF;
+    background-color: #1EAEDB;
+    border-color: #1EAEDB; }
+
+
+  /* Forms
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="text"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="password"],
+  textarea,
+  select {
+    height: 38px;
+    padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+    background-color: #fff;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box; }
+  /* Removes awkward default styles on some inputs for iOS */
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="text"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="password"],
+  textarea {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none; }
+  textarea {
+    min-height: 65px;
+    padding-top: 6px;
+    padding-bottom: 6px; }
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="search"]:focus,
+  input[type="text"]:focus,
+  input[type="tel"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  textarea:focus,
+  select:focus {
+    border: 1px solid #33C3F0;
+    outline: 0; }
+  label,
+  legend {
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: 600; }
+  fieldset {
+    padding: 0;
+    border-width: 0; }
+  input[type="checkbox"],
+  input[type="radio"] {
+    display: inline; }
+  label > .label-body {
+    display: inline-block;
+    margin-left: .5rem;
+    font-weight: normal; }
+
+
+  /* Lists
+  ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+  ul {
+    list-style: circle inside; }
+  ol {
+    list-style: decimal inside; }
+  ol, ul {
+    padding-left: 0;
+    margin-top: 0; }
+  ul ul,
+  ul ol,
+  ol ol,
+  ol ul {
+    margin: 1.5rem 0 1.5rem 3rem;
+    font-size: 90%; }
+  li {
+    margin-bottom: 1rem; }
+
+  /* Tables
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  th,
+  td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #E1E1E1; }
+  th:first-child,
+  td:first-child {
+    padding-left: 0; }
+  th:last-child,
+  td:last-child {
+    padding-right: 0; }
+
+
+  /* Spacing
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  button,
+  .button {
+    margin-bottom: 1rem; }
+  input,
+  textarea,
+  select,
+  fieldset {
+    margin-bottom: 1.5rem; }
+  pre,
+  blockquote,
+  dl,
+  figure,
+  table,
+  p,
+  ul,
+  ol,
+  form {
+    margin-bottom: 2.5rem; }
+
+
+  /* Utilities
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .u-full-width {
+    width: 100%;
+    box-sizing: border-box; }
+  .u-max-full-width {
+    max-width: 100%;
+    box-sizing: border-box; }
+  .u-pull-right {
+    float: right; }
+  .u-pull-left {
+    float: left; }
