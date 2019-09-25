@@ -235,7 +235,6 @@ nav a {
   position: relative;
   height: 100%;
   display: block;
-  overflow: auto;
 }
 
 .card > img {
@@ -443,6 +442,10 @@ nav a {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.24), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
 }
 
+/* .next-project-div {
+  margin-bottom: 6rem;
+} */
+
 
 /*Giro*/
 .giro-image {
@@ -535,10 +538,16 @@ footer {
   position: relative;
 }
 
-footer > h3 {
-  padding-top: 4rem;
-  padding-bottom: 2rem;
+#footer-link {
+  text-decoration: none;
 }
+
+#lets-connect {
+  padding-top: 4.2rem;
+  padding-bottom: .2rem;
+}
+
+
 
 .oval-footer {
   position: absolute;
