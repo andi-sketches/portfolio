@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+*::selection {
+  background: #FCF2B6;
+}
+
+*::-moz-selection {
+  background: #FCF2B6;
+}
+
 /* Grid /layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 nav,
@@ -543,16 +551,14 @@ footer {
 }
 
 #lets-connect {
-  padding-top: 4.2rem;
-  padding-bottom: .2rem;
+  margin-top: 5rem;
+  margin-bottom: .2rem;
 }
-
-
 
 .oval-footer {
   position: absolute;
   z-index: -1;
-  top: 3rem;
+  top: -1.2rem;
   left: 50%;
   margin-left: -60px;}
 
