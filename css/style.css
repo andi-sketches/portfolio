@@ -555,6 +555,10 @@ footer {
   margin-bottom: .2rem;
 }
 
+/* #line {
+  border-bottom: 2px solid #1BA187;
+} */
+
 .oval-footer {
   position: absolute;
   z-index: -1;
