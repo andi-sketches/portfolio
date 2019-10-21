@@ -16,6 +16,7 @@ nav,
 .container {
   margin: 2rem auto;
   padding: 0 1.5rem;
+  transition: all .2s ease;
 }
 
 .hello {
@@ -242,12 +243,13 @@ nav a {
   transition: 0.3s;
   position: relative;
   height: 100%;
-  display: block;
 }
 
 .card > img {
   max-width: 100%;
   object-fit: cover;
+  display: block;
+
 }
 
 .card:hover {
