@@ -221,6 +221,16 @@ nav a {
   position: relative;
 }
 
+#here {
+  background: #FCF2B6;
+  text-decoration: none;
+}
+
+#here:hover {
+  border-bottom: 1px solid #5d746e;
+  color: #323E3B;
+}
+
 .oval-andrea {
   position: absolute;
   top: 2.4rem;
@@ -249,75 +259,84 @@ nav a {
   max-width: 100%;
   object-fit: cover;
   display: block;
-
+  border-radius: 7.5px;
 }
 
-.card:hover {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 3px 6px 0 rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  color: white;
-}
-
-.hover {
-  transition: .5s ease;
+.card-title {
+  top: 10%;
 }
 
 .card-title,
 .card-desc,
 .card-cta {
   position: absolute;
-  top: 1.5rem;
   left: 1.25rem;
   margin: 0;
 }
 
-.card-title {
-  top: 10%;
-  left: 1.25rem;
-}
-
-.card-desc, .card-cta {
-  color: #fcfdfd;
+.hover-text {
   display: none;
+  top: 1.5rem;
 }
 
-.card-desc {
-  top: 30%;
-  padding-right: 20%;
-  line-height: 1;
+/* Media queries */
+@media (min-width: 600px) {
+
+  .card:hover > .hover-text {
+    display: inline;
+    color: #fcfdfd;
+  }
+
+  .card:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 3px 6px 0 rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    color: white;
+  }
+
+  .card:hover > .hover {
+    display: inline-block;
+  }
+
+  .hover {
+    transition: .5s ease;
+  }
+
+  .card-desc {
+    top: 30%;
+    padding-right: 20%;
+    line-height: 1.2;
+  }
+
+  .card-cta {
+    top: 70%;
+    font-weight: 700;
+  }
+
+  .card-overlay {
+    border-radius: 7.5px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(220, 117, 86, 0.85);
+    overflow: hidden;
+  }
+
+  .card:hover .card-overlay {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .card:hover > .card-title {
+    color: #fcfdfd;
+  }
+
 }
 
-.card-cta {
-  top: 70%;
-  font-weight: 700;
-}
 
-.card-overlay {
-  border-radius: 7.5px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: rgba(220, 117, 86, 0.85);
-  overflow: hidden;
-}
-
-.card:hover .card-overlay {
-  opacity: 1;
-  cursor: pointer;
-}
-
-.card:hover > .hover {
-  display: inline;
-  color: #fcfdfd;
-}
-
-.card:hover > .card-title {
-  color: #fcfdfd;
-}
 
 /* Case study styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -548,7 +567,7 @@ footer {
   position: relative;
 }
 
-#footer-link {
+footer a {
   text-decoration: none;
 }
 
@@ -558,13 +577,13 @@ footer {
 }
 
 /* #line {
-  border-bottom: 2px solid #1BA187;
+  border-bottom: 0.2px solid;
 } */
 
 .oval-footer {
   position: absolute;
   z-index: -1;
-  top: -1.2rem;
+  top: -1.75rem;
   left: 50%;
   margin-left: -60px;}
 
