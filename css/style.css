@@ -173,12 +173,15 @@ nav a {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @keyframes opacityOn {
   0% {
+      display: block;
       opacity: 0;
+    }
+  100% {
+      display: block;
+      opacity: 1;
+    }
   }
-  100%{
-    opacity: 1;
-  }
-}
+
 
 .oval {
   position: absolute;
@@ -186,19 +189,19 @@ nav a {
 
 .pink {
   top: 3rem;
-  animation: opacityOn 4s;
+  animation: opacityOn 1.5s;
 }
 
 .yellow {
   top: 4rem;
   left: 10rem;
-  animation: opacityOn 6s;
+  animation: opacityOn 2s ease-in;
 }
 
 .green {
   top: 8rem;
   left: 3.5rem;
-  animation: opacityOn 9s;
+  animation: opacityOn 2s;
 }
 
 .letter {
@@ -206,38 +209,43 @@ nav a {
 }
 
   .h {
+    opacity: 0;
     top: 6rem;
     left: 3rem;
     z-index: 2;
-    animation: opacityOn 3s linear;
+    animation: opacityOn .5s ease-in .5s forwards;
   }
 
   .e {
+    opacity: 0;
     top: 5.7rem;
     left: 6.2rem;
     z-index: 2;
-    animation: opacityOn 2s ease-in;
+    animation: opacityOn .6s ease-in .7s forwards;
   }
 
   .l-1 {
+    opacity: 0;
     top: 6.8rem;
     left: 8.4rem;
     z-index: 2;
-    animation: opacityOn 3s ease-in;
+    animation: opacityOn .7s ease-in .9s forwards;
   }
 
   .l-2 {
+    opacity: 0;
     top: 6.5rem;
     left: 10.5rem;
     z-index: 2;
-    animation: opacityOn 3s ease-in;
+    animation: opacityOn .8s ease-in 1.1s forwards;
   }
 
   .o {
+    opacity: 0;
     top: 6rem;
     left: 13rem;
     z-index: 2;
-    animation: opacityOn 5s ease-in;
+    animation: opacityOn .9s ease-in 1.3s forwards;
   }
 
 .head {
@@ -626,12 +634,6 @@ footer a {
 
 .footer-icons-div > a {
   text-decoration: none;
-}
-
-
-
-@media (min-width: 600px) {
-
 }
 
 /* Misc
