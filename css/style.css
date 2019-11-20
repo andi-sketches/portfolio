@@ -147,19 +147,18 @@ nav a {
     align-self: center;
   }
 
-  .nav-links a,
-  .nav-links a:hover {
-    display: inline-block;
-    padding: .2rem .6rem;
-    border-bottom: 2.5px solid transparent;
-  }
+  .nav-links a {
+      display: inline-block;
+      padding: .2rem .6rem;
+      border-bottom: 1.5px solid transparent;
+    }
 
-  .active {
-    color: #323E3B;
-    border-bottom: 2.5px solid #1BA187 !important;
+    .nav-links a:hover,
+    .active {
+      color: #8fa09c;
+      border-bottom: 1.5px solid #8fa09c;
+    }
   }
-
-}
 
 /* Greeting
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -258,8 +257,8 @@ nav a {
 }
 
 #here:hover {
-  border-bottom: 1.5px solid #5d746e;
-  color: #323E3B;
+  border-bottom: 1.5px solid #8fa09c;
+  color: #8fa09c;
 }
 
 .oval-andrea {
@@ -746,8 +745,7 @@ there.
     color: #323E3B;
   }
   a:hover {
-    color: #1BA187;
-    transition: color 0.2.5s ease-out;
+    color: #8fa09c;
   }
 
   em {
