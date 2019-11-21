@@ -746,6 +746,7 @@ there.
   }
   a:hover {
     color: #8fa09c;
+    transition: color 0.2.5s ease-out;
   }
 
   em {
