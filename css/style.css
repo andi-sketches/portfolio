@@ -85,7 +85,7 @@ nav,
 }
 
 nav {
-  color: #5d746e;
+  color: #323e3b;
 }
 
 nav a {
@@ -104,17 +104,17 @@ nav a {
 .nav-links > a {
   display: block;
   text-align: center;
-  border-bottom: 2px solid #BFCAC7;
+  border-bottom: 2px solid #323e3b;
   margin-bottom: -2px;
   padding: .6rem;
 }
 
 .nav-links a:hover {
-  border-bottom-color: #1BA187;
+  border-bottom-color: #323e3b;
 }
 
 .active {
-  color: #1BA187;
+  color: #323e3b;
 }
 
 /* .hamburger {
@@ -150,15 +150,27 @@ nav a {
   .nav-links a {
       display: inline-block;
       padding: .2rem .6rem;
-      border-bottom: 1.5px solid transparent;
+      border-bottom: 3px solid transparent;
+      text-decoration: none;
+      background-color: transparent;
+      color: inherit;
+      text-decoration: none;
+      transition: background .15s cubic-bezier(.33,.66,.66,1);
     }
 
-    .nav-links a:hover,
-    .active {
-      color: #8fa09c;
-      border-bottom: 1.5px solid #8fa09c;
-    }
+  .active {
+    border-bottom: 3px solid #A0E4D6;
+    box-shadow: inset 0 -3px 0 #A0E4D6;
   }
+
+  .nav-links a:hover {
+    background-color: #A0E4D6;
+    border-bottom: 3px solid #A0E4D6;
+    color: inherit;
+
+  }
+}
+
 
 /* Greeting
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -252,13 +264,17 @@ nav a {
 }
 
 #here {
-  background: #FCF2B6;
   text-decoration: none;
+  background-color: transparent;
+  color: inherit;
+  text-decoration: none;
+  transition: background .15s cubic-bezier(.33,.66,.66,1);
+  border-bottom: 3px solid #A0E4D6;
+  box-shadow: inset 0 -3px 0 #A0E4D6;
 }
 
 #here:hover {
-  border-bottom: 1.5px solid #8fa09c;
-  color: #8fa09c;
+  background-color: #A0E4D6;
 }
 
 .oval-andrea {
@@ -742,10 +758,10 @@ there.
   /* Links
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   a {
-    color: #323E3B;
+    color: #323e3b;
   }
   a:hover {
-    color: #8fa09c;
+    color: #A0E4D6;
     transition: color 0.2.5s ease-out;
   }
 
